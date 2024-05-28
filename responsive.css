@@ -1,0 +1,166 @@
+
+    /*media queries  with breakpoints*/
+
+    /* Extra small devices like phones below 576px  */
+    @media screen and (max-width:575.98px) {
+    
+
+        /*header_title*/
+.header_title{
+    top: 30%;
+    left:1%;
+    text-align:center;
+    
+    }
+
+        /*NAV */
+         .nav{
+            width:80%;
+            flex-direction:column;
+            visibility: hidden;
+            height: 90%;
+            left:0;
+            position: absolute;
+            padding-top:25%;
+            background-color:  rgb(61, 3, 3);
+            z-index:1;
+             }
+ 
+           /*NAV BUTTON  */
+             #nav-btn{
+                 z-index: 1;
+                 position: absolute;
+                     }
+ 
+               .nav a{
+            
+             margin:10% auto;
+                     }
+ 
+                     .logo-container{  
+                        width:100%         
+                           }
+
+                     /*logo*/
+                     .logo{
+                        float: right;
+                        }
+
+         /* SECTION*/
+         section{
+             height: fit-content;
+             padding: 2px;
+             width: 100%;
+ 
+         }
+ 
+         /* FIGURE*/
+             figure{
+                 flex: 100%;
+                 }
+              
+             details{
+               flex:100%; 
+                             
+             }
+
+     /*MY SLIDES PICTURE*/
+    .myslide{
+            height:auto;
+      
+            }
+
+            /*MESSAGE BOX/ THE PHONE FORM*/
+    .chat-container {
+        max-width: 100%;
+   }
+   /*animation for my title name*/
+
+.water-effect h1{
+    line-height: 50px;
+    -webkit-text-stroke: 1px maroon;
+     font-size:xx-large;
+
+}
+ 
+
+    /*profile-picture and animation*/
+    .profile-picture{
+        width: 80%;
+        height:60vh;
+        margin: auto 20px ;
+    }
+    .chat-container {
+        width: 100%;
+    }
+
+}
+      /* small devices (landscape  phones,576 and up to)  */
+   /*  @media screen and (min-width:576px)and (max-width:767.98px) {  */
+        @media  screen and (576px <= width <= 767.98px){  
+
+        .header_title{
+            top: 30%;
+            left:1%;
+            text-align:center;
+         
+            }
+         .nav{
+            width:70%;
+            flex-direction:column;
+            visibility: hidden;
+            height: 90%;
+            left:0;
+            position: absolute;
+            padding:5% auto auto 2% ;
+            background-color:  rgb(61, 3, 3);
+            z-index:1;
+             }
+ 
+           /*NAV BUTTON  */
+             #nav-btn{
+                 z-index: 1;
+                 position: absolute;
+                     }
+ 
+               .nav a{
+            z-index: 1;
+             margin:10% auto;
+                     }
+
+                     
+                     .logo-container{  
+                        width:100%         
+                           }
+
+                     /*logo*/
+                     .logo{
+                        float: right;
+                        }
+
+                details{
+                    flex-basis: calc(33.33% - 1px);
+                }
+
+                 /*MESSAGE BOX/ THE PHONE FORM*/
+                 .chat-container {
+                    width: 100%;
+                 }
+
+     }
+          /*Medium devices (tablets ) old way   */           
+    /* @media screen and (min-width:768px)and (max-width:991.98px) {*/
+        /*new way*/
+     @media  screen and( 768px <= width <= 991.98px) {
+        
+    }
+ 
+     
+ 
+      /*Extra Devices large destops   */
+     @media screen and (min-width:1200px) {
+ 
+     }
+         
+     
+ 

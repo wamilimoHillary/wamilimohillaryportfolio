@@ -1,0 +1,427 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*All buttons for consistency*/
+button{
+    padding:8px;
+        background-color:transparent;
+        border:none;
+        box-shadow: 1px 1px 5px 2px #fff;
+        border-radius: 15px;
+        color: #fff;
+        margin: 2px;
+}
+
+/*all links*/
+a{
+       text-decoration: none;
+       color: #fff;
+}
+    /*HEADER*/
+        header{
+         height:85vh;
+         left: 0;
+         background-image:url('images/wamilimo1.jpg') ;
+         background-size: cover;
+         background-position: 100% 100%;
+        }
+
+        /*NAVS */
+        .nav{
+           height:fit-content;
+           background-color:  transparent;
+           width:fit-content;
+           float: right;
+           margin: 10px;
+           padding: 10px;
+           display: flex;
+            }
+
+          
+  /* NAV LINKS*/
+        .nav a{
+            color: #fff;
+            margin-left: 35px;
+            font-size: x-large;
+        }
+  /*NAV LINKS ON HOVER */
+        button:hover{
+          opacity: 0.3;
+                 }
+   
+        .nav a:hover{
+            color: rgb(99, 3, 3);
+            text-decoration: none;
+        }
+
+  /*Icon size*/
+        .fa{
+            font-size: x-large;
+           
+        }
+
+      
+/*header_title*/
+.header_title{
+text-align: justify;
+color: #fff;
+padding: 5px;
+position: absolute;
+top: 20%;
+left: 23%;
+}
+
+.cv{
+    text-shadow: 1px 1px 0 #4f4d4c, 2px 2px 0 #4f4d4c,3px 3px 0 #4f4d4c;  
+  /* -webkit-text-stroke:0.5px maroon ; */
+    color:wheat;
+    font-family: Arial, sans-serif; 
+    font-style: oblique;
+    font-size: x-large;
+   }
+
+
+marquee {
+    direction:top;
+    scroll-amount:9;
+    color:maroon;
+    font-size: 20px;
+     }    
+  
+/*nav-btn and logo container*/
+.logo-container{
+     padding:20px ;
+     width: fit-content;
+    
+}
+/*logo and text*/
+.logo{
+    width: fit-content;
+   
+}
+
+.logo img{
+    width:100px;
+     height:auto;
+     animation: rotate_client  6s ease-in-out 2s infinite; /*shorthand property*/
+}
+
+/*animation for my title name*/
+.water-effect{
+    width: 85%;
+}
+.water-effect h1{
+    line-height: 50px;
+    color: transparent;
+    -webkit-text-stroke: 1px maroon;
+    background-image: url(images/hy.jpg);
+    -webkit-background-clip: text;
+    background-position:70% 100%;
+    animation: myheading  3s alternate infinite;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:70px;
+
+}
+
+@keyframes myheading{
+    100%{
+    background-position:1000px 0 ;
+}
+   }
+
+
+  /*ASIDE */
+        aside{
+        width: 15vh;
+        background-color: black;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        
+        }
+
+          /* MAIN*/
+    main{
+        background-color:transparent;
+        height:fit-content;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+      /* SECTIONS*/
+    section{
+        background-color:rgb(245, 230, 200);
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+       margin:5px auto;
+       
+    }
+
+    section h2{
+        color:  rgb(255, 116, 9);
+        text-decoration: underline;
+    }
+
+
+      /* FIGURES*/
+    figure{
+        height: fit-content;
+        background-color: rgb(61, 3, 3);
+        width:20%;
+        flex: 1;
+        margin: 4px;
+        border-radius: 25px;
+        color: #fff;
+        padding: 10px;
+       
+        
+    }
+
+    /*profile-picture and animation*/
+    .profile-picture{
+        width: 60%;
+        height:90vh;
+        margin: auto 23% ;
+        box-shadow:  -7px 10px 5px 2px #fff ;
+        border-radius: 50%;
+        background-image: url(images/wami4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size:100% 100%;
+    animation: home-animation 15s  3s infinite normal;/*animation shorthand property: 
+       name,duration,timing-function,delay,iteration-count,direction;*/
+    }
+       
+    @keyframes  home-animation {
+          0%{  background-image: url(images/wami4.png);}
+          30%  {background-image:url(images/wami5-removebg-preview.png);}
+          50%  {background-image:url(images/wami6-removebg-preview.png);}
+          80%  {background-image:url(images/wami7-removebg-preview.png);}
+          100%  {background-image:url(images/wami8-removebg-preview.png);}
+          
+        }
+
+    /*type writer color*/
+    #animated-text{
+        color:  rgb(255, 116, 9);
+    }
+
+    /*MY SLIDES PICTURE*/
+    .myslide{
+        width: 40%;
+        height:250px;
+        margin:  2% 30%;
+    }
+    
+/*details*/
+details{
+flex: 1;
+border-radius: 25px;
+margin:5px;
+}
+
+/*summary of content when open*/
+details[open] summary{
+    background-color: rgb(255, 116, 9);
+    color:rgb(61, 3, 3);
+    box-shadow: none;
+    border: none;
+}
+/*summary of content*/
+ summary{
+    box-shadow: -5px 5px 7px 2px  rgb(255, 116, 9) ;
+    background-color:rgb(61, 3, 3);
+    color: #fff;
+    font-weight:bold ;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 5px;
+    
+ }
+
+
+ /* #remove marker
+summary::marker{
+    content: "";
+}
+*/
+
+/*content to be displayed*/
+.contents{
+    font-size:medium;
+    color:rgb(61, 3, 3);
+   padding: 5px; 
+   text-align: justify;
+   border: 1px solid rgb(61, 3, 3); 
+   border-radius: 20px;  
+}
+
+/*clients picture*/
+.client-img{
+    height: 150px;
+    width: 150px;
+    float: left;
+    border-radius: 50%;
+    animation: rotate_client  6s ease-in-out 2s infinite; /*shorthand property*/
+   
+  }
+
+  /*client-box*/
+  #client-box{
+background-color:#fff;
+box-shadow: 5px 5px  10px 5px  rgb(255, 116, 9)inset;/*box shadow with blur*/
+color:rgb(61, 3, 3);
+  }
+
+  /*rotation Client img*/
+@keyframes rotate_client {
+    0%{ transform:rotateY(0deg)}
+    100%{transform:rotateY(360deg);}
+  }
+
+
+
+  hr{
+        background-color: rgb(255, 116, 9) ;
+  }
+
+  /*PROJECT SECTION OR PAGE*/
+  #project{
+    background-color:transparent;
+    border: 0.5px solid rgb(61, 3, 3);
+    padding: 0;
+  }
+
+  #project img {
+    width: 100%;
+    display: block;
+    border-radius: 25px 25px 0 0;
+}
+
+#project h3 {
+    margin-top: 0;
+    color:rgb(255, 116, 9);
+}
+#project p {
+    margin-bottom: 10px;
+}
+#project a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgb(74 4 4);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+/*contact icon*/
+.contact{
+    background:radial-gradient(circle, rgb(255, 116, 9) 60%, rgb(61, 3, 3) 20%)
+}
+
+.fa-whatsapp,.fa-facebook,.fa-envelope{
+padding: 5px 10px;
+border-radius: 10px;
+font-size: 40px;
+}
+
+.fa-whatsapp{
+    color: #fff;
+    background-color: green;
+    }
+
+ .fa-facebook{
+    color: rgb(24, 54, 205);
+    background-color: aliceblue;
+ } 
+ 
+ .fa-envelope{
+ background-color: #fff;
+ background-image: linear-gradient(to right, rgb(63, 165, 255), red, rgb(255, 136, 0),green );
+ }
+  
+ 
+
+
+        
+ /*MESSAGE BOX/ THE PHONE FORM*/
+    .chat-container {
+        width: 80%;
+        margin: 15px auto;
+        background-color: #fff;
+        background-image: url(images/iphone.jpg);
+    background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+        overflow: hidden;
+        padding: 10px;
+     
+        
+       
+    }
+    .chat-header {
+        color: maroon;
+        padding: 10px;
+        text-align: center;
+        margin-top:30px;
+       
+    }
+    .chat-messages {
+        padding: 10px;
+        height: 250px;
+        overflow-y: scroll;
+    }
+    .message {
+        margin-bottom: 10px;
+    }
+    .message:last-child {
+        margin-bottom: 0;
+    }
+
+    .user-message,.client-message {
+        background-color:rgb(42, 105, 42);
+        color: #fff;
+        border-radius: 8px;
+        padding: 8px 12px;
+        max-width: 70%;
+        float: right;
+    }
+   
+    .client-message{
+        float: left;
+    }
+    .message-input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin: 0 10px;
+    }
+    .send-button {
+        background-color: green;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+
+      /* FOOTER*/
+            footer{
+                background-color: rgb(61, 3, 3);
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                color: #fff;
+                text-align: center;
+                top:1px;
+                padding:  30px ;
+                
+               }

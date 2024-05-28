@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>index</title>
+ 
+          <!--favicon-->
+    <link rel="icon" style="image" href="images/spubatch.png">
+
+     <!-- icon library-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+     <!-- Bootstrap JS and Popper.js -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <!--link to css style and responsive-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!--link to javascript-->
+      <script src="script.js"></script>
+  
+</head>
+<body>
+
+    <!--header-->
+   <header>
+      
+        <!--nav-->
+        <nav class="nav" id="nav">
+            <a href="index.html"><i class="fa fa-home"></i>Home</a>
+            <a href="about.html"><i class="fa fa-user"></i>About</a>
+            <a href="projects.html"><i class="fa fa-folder"></i>Projects</a>
+            <a href="contact.html"><i class="fa fa-phone"></i>Contacts</a>
+        </nav>
+
+ <!-- logo-->
+ <div class="logo-container">
+   <!--nav button-->
+   <button onclick="toggle_nav ()" id="nav-btn"><i class="fa fa-bars"></i></button>
+            <div class="logo">
+             <img src="images/logo.png">
+             <h5 class="cv"><b> ST PAUL'S <br> UNIVERSITY</b></h5>
+            </div>
+    </div>     
+
+            <!--header title-->
+          <div class="header_title">
+                        Welcome to
+                   <div class="water-effect">
+                 <h1>Dr. WAMILIMO Hillarie Portfolio</h1>
+                    </div>
+                     <h4>See>Read-Feel &HIRE Me</h4>
+                
+                        <h1 class="cv"><b> Curiculum Vitae</b></h1>
+                        <button class="cv_button"> <a href="images/WAMILIMO CV UPDATED.pdf" Download="Wamilimocv">Download Cv</a></button>                      
+        </div>
+
+     
+    </header>
+      
+    <!--
+    (<!--aside--)
+        <aside></aside>
+    -->
+
+<!--main-->
+   <main>
+  
+       <!--.......marquee.............-->
+       <marquee>
+           <p><b>You Become unstopable when you work on things people cant take away from you.
+                Things like your Mindset,character, personality and of more weight Skills.</b></p>
+       </marquee>
+
+        <!--section 1-->
+    <section>
+        <!--column 1-->
+        <figure>
+            <p>For you,,  I am Wamilimo Hillary</p> 
+                <h1 id="animated-text"> </h1> <!-- title for specialist-->
+          <div class="profile-picture" > </div>
+
+          <!-- paragraph description introduction-->
+          <p id="intro" style="display:none">  <br>
+            <b> A passionate web developer with expertise in creating 
+            stunning and functional websites. 
+            This is my original website to show all details and work experiences in we development. </b></p>
+            <br> <br>
+     
+  <!-- Button to toggle the introduction -->
+  <button class="button" type="button" onclick="toggleIntro()" id="intro-btn">Read Intro</button>
+ 
+   <button><a href="about.html">Know More</a></button>
+        </figure>
+
+        <!--column 2-->
+        <figure>
+            <h4>Languages,Frameworks & Tools</h4>
+                    <!-- images for slides-->
+                   <img src="images/html-removebg-preview.png" class="myslide" >
+                    <img  src="images/css-removebg-preview.png" class="myslide">
+                   <img src="images/js-removebg-preview.png" class="myslide">
+                   <img src="images/py.jpg" class="myslide">
+                    <img src="images/vscode.jpg" class="myslide">
+                   <img  src="images/react.jpg" class="myslide">
+                   <img  src="images/git.jpg" class="myslide">
+                   <img  src="images/github-removebg-preview.png" class="myslide">
+                  
+           <hr><hr> <br>
+    <div class="chat-container">
+        <div class="chat-header">
+            Quickly send me a Message!
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message user-message">Hello! How can I help you?</div>
+            <div class="message client-message">Hi! I'm interested in your services.</div>
+        </div>
+        <form method="post" action="send_message">
+            <input type="text" name="email" class="message-input" placeholder="Your Email">
+            <br><br>
+            <input type="text" name="message" class="message-input" placeholder="Type your message...">
+            <button type="submit" class="send-button">Send</button>
+        </form>
+    </div>
+            
+            
+        </figure>
+       
+    </section> 
+
+  
+
+
+        <!--section 2 services-->
+        <section>
+            <div style="flex:100%"> <h2>Services & Pricing</h2></div><br>
+        <details>
+                <summary>1.Web Development</summary>
+               <div class="contents">
+                <p><b>Summary: </b>Craft stunning websites tailored to your clients’ needs. 
+                    From sleek portfolios to robust e-commerce platforms, I’ve got you covered. <hr>
+                    <b>Details:</b> Custom designs, responsive layouts, SEO optimization, and seamless
+                     user experiences.
+                     <hr>
+                    <b>Pricing: </b> Starting at low as 6k $75 <b>(varies based on complexity).</b>
+                     </p>
+             </div>
+            </details>
+        
+            <details>
+                <summary>2. Graphic designing</summary>
+                   <div class="contents">
+                    <p><b>Summary: </b> ideas into visual masterpieces. Logos, banners, brochures—I’ll make your brand stand out. <hr>
+                        <b>Details:</b>  Logo creation, branding materials, social media graphics, and print-ready files. <hr>
+                        <b>Pricing: </b> Packages from $3 (depends on project scope).
+                         </p>
+                 </div>
+            </details>
+    
+            <details>
+                <summary>3. Networking </summary>
+                   <div class="contents">
+                    <p><b>Summary: </b> Keep businesses connected. Reliable networks, 
+                        secure setups, and smooth communication. <hr>
+                        <b>Details:</b>  Network design, setup, troubleshooting, and maintenance. <hr>
+                        <b>Pricing: </b> Custom quotes based on requirements.
+                         </p>
+                 </div>
+            </details>
+    
+            <details>
+                <summary>4. Online services & Tech Troubleshooting</summary>
+                   <div class="contents">
+                    <p><b>Summary: </b> Enhance professional profiles. I’ll craft compelling CVs 
+                        and polish essays to perfection. Tech gremlins? Fear not! I’ll diagnose and 
+                        fix software glitches, OS installations, and more. <hr>
+                        <b>Details:</b>  Tailored CVs highlighting skills and achievements. 
+                        Essay editing for clarity and impact.Details: Windows installations, 
+                        software updates, hardware diagnostics. <hr>
+                        <b>Pricing: </b>CVs from $3, essay editing from $7. troubleshooting  Hourly rate, starting at $7.
+                         </p>
+                 </div>
+            </details>
+
+        </section>
+
+       
+    <!--section 3 WHY ME-->
+    <section>
+        <div style="flex:100%"> <h2>!!WHY MR.WAMILIMO?</h2></div><br>
+    <details>
+            <summary>1. DIVERSE SKILLS</summary>
+           <div class="contents">
+            <p>Am  a networking profficiency, web developer fullstack and 
+                can swicth between 2 backend language easily With the ability to seamlessly  switch between technologies, 
+                I bring versatility and agility to any project, 
+                ensuring successful outcomes. So adaptivity with ease</p>
+         </div>
+        </details>
+    
+        <details>
+            <summary>2. TIME & COST </summary>
+               <div class="contents">
+                <p>My commitment to punctuality and cost-effectiveness ensures
+                    projects are completed on scheduleand within budget,
+                     exceeding client expectations. I work within budget.</p>
+             </div>
+        </details>
+
+        <details>
+            <summary>3. ALWAYS UPDATED </summary>
+               <div class="contents">
+                <p>Always Updated with Current Tech and Security Issues
+                    by prioritizing and staying abreast of the latest technology 
+                    and security trends to deliver cutting-edge solutions.</p>
+             </div>
+        </details>
+
+        <details>
+            <summary>4. POWER OF COLLABORATION</summary>
+               <div class="contents">
+                <p> Power of Collaboration by Leveraging tools like Git and GitHub, 
+                    I foster seamless collaboration among team members, driving 
+                    innovation and excellence.</p>
+             </div>
+        </details>
+    </section>
+
+    <!--section 3 Clients-->
+    <section>
+        <div style="flex:100%"> <h2>Here from my Clients</h2></div><br>
+                
+    <figure>
+        <img src="images/leah1.png" class="client-img" ><!--client picture-->
+        <h2>Client 1</h2> 
+    </hr>
+    <h4>Leah</h4>  <!--client name-->
+    <hr>   <br> <br>
+    <p>Working with Wamilimo was a game-changer. Exceptional
+         skills, creative approach, and always met deadlines. 
+         A pleasure to work with  highly recommended!
+         </p>
+        </figure>
+
+        <!-- client 2-->
+    <figure id="client-box"> 
+        <img src="images/martha2.jpg" class="client-img" >
+        <h2>Client 2</h2>
+    </hr>
+    <h4>Martha</h4>
+    <hr>  <br> <br>
+     <p> Hillarie is a true asset. Consistently impressed 
+            with the quality of work and attention to detail.
+             Reliable and collaborative, He turned our ideas
+              into reality seamlessly. Highly satisfied client! </p>
+             </figure>          
+        </section>
+
+<!--client section 2-->
+ <section>
+ <!-- client 3-->
+ <figure> 
+    <img src="images/martha3.jpg" class="client-img" >
+    <h2>Client 3</h2>
+</hr>
+<h4>Marrie</h4>
+<hr>  <br> <br>
+ <p> Hillarie is a true asset. Consistently impressed 
+        with the quality of work and attention to detail.
+         Reliable and collaborative, He turned our ideas
+          into reality seamlessly. Highly satisfied client! </p>
+ </figure>
+
+  <!-- client 4-->
+  <figure id="client-box"> 
+    <img src="images/martha3.jpg" class="client-img" >
+    <h2>Client 3</h2>
+</hr>
+<h4>Marrie</h4>
+<hr>  <br> <br>
+ <p> Hillarie is a true asset. Consistently impressed 
+        with the quality of work and attention to detail.
+         Reliable and collaborative, He turned our ideas
+          into reality seamlessly. Highly satisfied client! </p>
+ </figure>
+
+        </section>
+
+
+        
+<!--PROJECT CONTAINER D-->
+    <section>
+        <div style="flex:100%"> <h2>My Projects</h2></div><br>
+        <!--coulumn1-->
+        <figure id="project">
+            <img src="images/des2.jpg" alt="Project 1">
+            <div class="info">
+                <h3>Graphics</h3>
+                <a href="graphics.html">View Graphics</a>
+            </div>
+        </figure>
+        <!-- column 2-->
+        <figure id="project">
+            <img src="images/b.jpg" alt="Project 2">
+            <div class="info">
+                <h3>Websites</h3>
+                <a href="https://wamilimohillary.github.io/wamilimohotel">View 1</a>  
+                <a href=" https://wamilimohillary.github.io/adminlogin1 ">View 2</a>  
+                <a href="https://wamilimohillary.github.io/wamilimoportfolio">View 3</a>
+                <a href="https://wamilimohillary.github.io/fumigationweb">View 4</a>
+                <a href="https://wamilimohillary.github.io/churchweb">View 5</a>
+                <a href=" https://wamilimohillary.github.io/adminlogin2/">view 6</a>
+            </div>
+        </figure>
+           <!-- column 3-->
+        <figure id="project">
+            <img src="images/microsoft.jpg" alt="Project 3">
+            <div class="info">
+                <h3>Others</h3>
+                <p>WAITING FOR UPCOMING PROJECT...........</p>
+                <a href="#">Coming Soon</a>
+            </div>
+        </figure>
+    </section>
+
+        
+    <!--section 3 mission goals etc-->
+    <section>
+        <div style="flex:100%"> <h2>Backgrounds</h2></div><br>
+        <details>
+            <summary>GOAL</summary>
+               <div class="contents">
+                <p>To graduate from a Tech PRO to  tech LEGEND  and deliver the  best solution to real World problems </p>
+             </div>
+        </details>
+
+            <details>
+            <summary>MY OBJECTIVE</summary>
+           <div class="contents">
+            <p>
+                Seeking a position where I can utilize my diverse skills and experiences to contribute effectively 
+                towards the organization objectives, while continuously learning and growing.  </p>
+         </div>
+        </details>
+    
+        <details>
+            <summary>VISION & MISSION</summary>
+               <div class="contents">
+                <p>   </p>
+             </div>
+        </details>
+
+        <details>
+            <summary>CORE VALUES </summary>
+               <div class="contents">
+                <p> CLI-BIT <br>
+                     (Collaborate, Lead, Innovate, Believe, Inspire, Timely.)</p>
+             </div>
+        </details>
+
+    </section>
+
+
+
+    <!--Contact Details section-->
+<section>
+    <div style="flex:100%"> <h2>How To Reach Me</h2></div><br>
+
+        <figure class="contact">
+             
+                 <h5> Whatsapp</h5> <hr>
+                 <a href=" " class="fa fa-whatsapp"></a><h3>0796981288</h3>
+                 
+                 <p> Scan Qr code</p>
+                 <img height="90px" width="90px"  src="images/qr-code.jpg">
+             
+         </figure>
+         
+         <figure class="contact">
+             <h5> Facebook</h5><hr>
+             <a href=" " class="fa fa-facebook"></a>
+          <br>
+      
+         <h5> Email @</h5> <hr>
+         <a href="mailto:wamilimohillarie@Gmail.com"><i  class="fa fa-envelope"></i>
+              <br> Click to send Email</a>
+              <h5>wamilimohillarie@gmail.com</h5>
+        </figure>
+    
+            
+</section>
+   </main>
+
+
+   <!--footer-->
+<footer>
+        <button><a href="">HOME</a></button> 
+    <p>Copyright.. all rights reserved &copy; 2024 @Wamilimo Hillarie | portfolio........</p> 
+</footer>
+
+<!-- javascript for sliding pictures in about page-->
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        let slides = document.getElementsByClassName("myslide"); /*retrieves all the slide elements*/
+        for (let i = 0; i < slides.length; i++) { /*iterates through each slide*/
+            slides[i].style.display = "none";  // Hide all slides
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;  // Reset index if it exceeds number of slides
+        }
+        slides[slideIndex - 1].style.display = "block";  // Display current slide
+        setTimeout(showSlides, 2000);  // Change slide every 2 seconds (2000 milliseconds)
+    }
+
+
+    </script> 
+    
+
+</body>
+</html>
