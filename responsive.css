@@ -64,12 +64,13 @@
                              
              }
 
-     /*MY SLIDES PICTURE*/
-    .myslide{
-            height:auto;
-      
-            }
+    
 
+             /*MY SLIDES PICTURE*/
+    .myslide img{
+               height:auto;
+          }
+    
             /*MESSAGE BOX/ THE PHONE FORM*/
     .chat-container {
         max-width: 100%;

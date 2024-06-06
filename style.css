@@ -133,6 +133,11 @@ marquee {
 }
    }
 
+   #skill_img{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 20px;
+   }
 
   /*ASIDE */
         aside{
@@ -154,7 +159,7 @@ marquee {
 
       /* SECTIONS*/
     section{
-        background-color:rgb(245, 230, 200);
+        background-color:#f5deb3;
         height: fit-content;
         display: flex;
         flex-wrap: wrap;
@@ -213,7 +218,7 @@ marquee {
     }
 
     /*MY SLIDES PICTURE*/
-    .myslide{
+    .myslide img{
         width: 40%;
         height:250px;
         margin:  2% 30%;
@@ -292,6 +297,10 @@ color:rgb(61, 3, 3);
   }
 
   /*PROJECT SECTION OR PAGE*/
+  .project_header ,.contact_header{
+height: 40vh;
+  }
+
   #project{
     background-color:transparent;
     border: 0.5px solid rgb(61, 3, 3);
@@ -323,7 +332,7 @@ color:rgb(61, 3, 3);
 
 /*contact icon*/
 .contact{
-    background:radial-gradient(circle, rgb(255, 116, 9) 60%, rgb(61, 3, 3) 20%)
+    background:radial-gradient(circle, rgb(255, 116, 9) 70%, rgb(61, 3, 3) 10%)
 }
 
 .fa-whatsapp,.fa-facebook,.fa-envelope{
@@ -348,71 +357,6 @@ font-size: 40px;
  }
   
  
-
-
-        
- /*MESSAGE BOX/ THE PHONE FORM*/
-    .chat-container {
-        width: 80%;
-        margin: 15px auto;
-        background-color: #fff;
-        background-image: url(images/iphone.jpg);
-    background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 25px;
-        overflow: hidden;
-        padding: 10px;
-     
-        
-       
-    }
-    .chat-header {
-        color: maroon;
-        padding: 10px;
-        text-align: center;
-        margin-top:30px;
-       
-    }
-    .chat-messages {
-        padding: 10px;
-        height: 250px;
-        overflow-y: scroll;
-    }
-    .message {
-        margin-bottom: 10px;
-    }
-    .message:last-child {
-        margin-bottom: 0;
-    }
-
-    .user-message,.client-message {
-        background-color:rgb(42, 105, 42);
-        color: #fff;
-        border-radius: 8px;
-        padding: 8px 12px;
-        max-width: 70%;
-        float: right;
-    }
-   
-    .client-message{
-        float: left;
-    }
-    .message-input {
-        width: calc(100% - 20px);
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        margin: 0 10px;
-    }
-    .send-button {
-        background-color: green;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-
-
       /* FOOTER*/
             footer{
                 background-color: rgb(61, 3, 3);
