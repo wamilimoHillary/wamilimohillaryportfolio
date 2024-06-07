@@ -14,6 +14,7 @@ This portfolio showcases a collection of projects that demonstrate my expertise,
 - **Contact Information**: Get in touch with me easily through provided contact details.
 - **SERVICES**: SOME ONLINE SERVIVES.
 - **mY GOAL,VISION ETC** 
+- **Future enhancement** add my team 
 
 ## Usage
 
@@ -28,7 +29,7 @@ If you have suggestions, improvements, or would like to report any issues, pleas
 
 ## Contact
 
-- **Email**: wamilimohillarie@gmail.com
+- **Email**: IN PORFOLIO
 - **LinkedIn**: (https:// )
 
 

@@ -12,7 +12,7 @@ button{
         box-shadow: 1px 1px 5px 2px #fff;
         border-radius: 15px;
         color: #fff;
-        margin: 2px;
+        margin: 4px 8px;
 }
 
 /*all links*/
@@ -170,7 +170,7 @@ marquee {
 
     section h2{
         color:  rgb(255, 116, 9);
-        text-decoration: underline;
+
     }
 
 
@@ -240,7 +240,7 @@ details[open] summary{
 }
 /*summary of content*/
  summary{
-    box-shadow: -5px 5px 7px 2px  rgb(255, 116, 9) ;
+    box-shadow: 2px 2px 3px 2px  rgb(255, 116, 9) ;
     background-color:rgb(61, 3, 3);
     color: #fff;
     font-weight:bold ;
@@ -275,6 +275,10 @@ summary::marker{
     border-radius: 50%;
     animation: rotate_client  6s ease-in-out 2s infinite; /*shorthand property*/
    
+  }
+
+  #testimonial_text{
+    color: #fff;
   }
 
   /*client-box*/

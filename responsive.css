@@ -71,10 +71,6 @@
                height:auto;
           }
     
-            /*MESSAGE BOX/ THE PHONE FORM*/
-    .chat-container {
-        max-width: 100%;
-   }
    /*animation for my title name*/
 
 .water-effect h1{
@@ -84,15 +80,21 @@
 
 }
  
+#client-box h4,#client_position{
+    font-size:medium ;
+    margin-top: 30%;
+}
+
+.client-img{
+    width: 50%;
+    height: auto;
+}
 
     /*profile-picture and animation*/
     .profile-picture{
         width: 80%;
         height:60vh;
         margin: auto 20px ;
-    }
-    .chat-container {
-        width: 100%;
     }
 
 }
@@ -142,11 +144,6 @@
                 details{
                     flex-basis: calc(33.33% - 1px);
                 }
-
-                 /*MESSAGE BOX/ THE PHONE FORM*/
-                 .chat-container {
-                    width: 100%;
-                 }
 
      }
           /*Medium devices (tablets ) old way   */           
