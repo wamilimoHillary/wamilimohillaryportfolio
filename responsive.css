@@ -24,7 +24,7 @@
             padding-top:25%;
             background-color:  rgb(61, 3, 3);
             z-index:1;
-             }
+                 }
  
            /*NAV BUTTON  */
              #nav-btn{
@@ -97,6 +97,11 @@
         margin: auto 20px ;
     }
 
+      /*type writer color*/
+      #animated-text{
+            font-size: larger;
+    }
+
 }
       /* small devices (landscape  phones,576 and up to)  */
    /*  @media screen and (min-width:576px)and (max-width:767.98px) {  */
@@ -141,9 +146,17 @@
                         float: right;
                         }
 
+                        
+         /* FIGURE*/
+             figure{
+                flex: 100%;
+                }
+             
+
                 details{
                     flex-basis: calc(33.33% - 1px);
                 }
+
 
      }
           /*Medium devices (tablets ) old way   */           

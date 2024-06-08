@@ -24,9 +24,9 @@ a{
         header{
          height:85vh;
          left: 0;
-         background-image:url('images/wamilimo1.jpg') ;
+         background-image:url('images/header.png') ;
          background-size: cover;
-         background-position: 100% 100%;
+         background-position: 100% 80%;
         }
 
         /*NAVS */
@@ -64,20 +64,53 @@ a{
         }
 
       
-/*header_title*/
-.header_title{
-text-align: justify;
-color: #fff;
-padding: 5px;
-position: absolute;
-top: 20%;
-left: 23%;
+/* header_title */
+.header_title {
+    text-align: justify;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: 24%;
+    left: 20%;
+    text-align: justify;
+    animation: slideInOut 7s ease-in-out infinite;
 }
 
-.cv{
-    text-shadow: 1px 1px 0 #4f4d4c, 2px 2px 0 #4f4d4c,3px 3px 0 #4f4d4c;  
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    60% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/*cv container*/
+.cv_container{
+    position: absolute;
+    top: 65%;
+    left: 32%;
+}
+
+/*cv title and for the logo title*/
+.cv_title{
+    text-shadow: 1px 1px 0 rgb(255, 116, 9),2px 2px 0 #fff;  
   /* -webkit-text-stroke:0.5px maroon ; */
-    color:wheat;
+    color:rgb(90, 2, 2);
     font-family: Arial, sans-serif; 
     font-style: oblique;
     font-size: x-large;
@@ -112,18 +145,20 @@ marquee {
 /*animation for my title name*/
 .water-effect{
     width: 85%;
+    
 }
 .water-effect h1{
     line-height: 50px;
     color: transparent;
-    -webkit-text-stroke: 1px maroon;
+    -webkit-text-stroke: 1px rgb(61, 3, 3) ;
     background-image: url(images/hy.jpg);
     -webkit-background-clip: text;
     background-position:70% 100%;
     animation: myheading  3s alternate infinite;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
-  font-size:70px;
+  font-size:55px;
+  
 
 }
 
@@ -215,6 +250,7 @@ marquee {
     /*type writer color*/
     #animated-text{
         color:  rgb(255, 116, 9);
+    
     }
 
     /*MY SLIDES PICTURE*/
