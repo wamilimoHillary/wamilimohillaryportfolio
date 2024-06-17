@@ -48,7 +48,27 @@
              <img src="images/logo.png">
              <h5 class="cv_title"><b> ST PAUL'S <br> UNIVERSITY</b></h5>
             </div>
-    </div>     
+        </div> 
+
+            <!--switch for dark mode-->
+            <div class="switch">
+                <input type="checkbox" id="toggle-dark-mode">
+                <label for="toggle-dark-mode" class="slider">
+            
+                </label>
+            </div>
+            
+
+  <!--function to switch btwn light mode and dark-->
+            <script defer>
+                function toggleDarkMode() {
+                    document.body.classList.toggle('dark-mode');
+                }
+            
+                document.getElementById('toggle-dark-mode').addEventListener('click', toggleDarkMode);
+            </script>
+            
+      
 
             <!--header title-->
           <div class="header_title">
@@ -203,7 +223,7 @@
             </details>
     
             <details>
-                <summary>4. Online services & Tech Troubleshooting</summary>
+                <summary>4.Online serve & Troubleshooting</summary>
                    <div class="contents">
                     <p><b>Summary: </b> Enhance professional profiles. I’ll craft compelling CVs 
                         and polish essays to perfection. Tech gremlins? Fear not! I’ll diagnose and 
@@ -218,7 +238,111 @@
 
         </section>
 
-       
+       <!--  Clients section -->
+    <section>
+        <div style="flex:100%"> <h2>MY Clients</h2></div><br>
+
+<!--main container-->
+<div class="container">
+  <div class="box">
+    <div class="face front"> <!--client front face-->
+      <img src="images/wami2.jpg" alt="Martha">
+      <div class="text-content">
+        <h2>Hillarie Wamie</h2>
+       <h5>INNOVATOR </h5>
+       <p>1.Project:Wamilimo portfolio <br>
+          2. wamilimo Visual-Nexus </p>
+     <p>Period: Feb-May 2024</p>
+      </div>
+    </div>
+    <div class="face back"><!--client back face-->
+        <h2>Testimonial</h2>
+        <p>Creating this personal portfolio was a rewarding challenge that
+            allowed me to showcase my skills in web development and design.
+             The project helped me refine my expertise in responsive design, 
+             user experience, and modern web technologies.Also worked on wamilimo Visual-Nexus
+             website that proved my ability in we development"</p>
+
+    </div>
+  </div>
+</div>
+
+
+  
+<!--client 2-->
+<div class="container">
+    <div class="box">
+      <div class="face front"> <!--client front face-->
+        <img src="images/shikanda.jpg" alt="Martha">
+        <div class="text-content">
+          <h2>George Shikanda</h2> 
+         <h5> Shejems Youth Enterprise-KAKAMEGA</h5>
+         <p>Project: Graphic designs</p>
+         <p>Engagement: Jan 2023 -To date</p>
+        </div>
+      </div>
+      <div class="face back"><!--client back face-->
+          <h2>Testimonial</h2>
+          <p>"Hillarie is a true asset. Consistently impressed 
+            with the quality of work and attention to detail.
+            Reliable and collaborative, He turned my ideas
+            into reality seamlessly. Highly satisfied client! " </p>
+  
+      </div>
+    </div>
+  </div>
+
+  
+<!--client 3-->
+<div class="container">
+    <div class="box">
+      <div class="face front"> <!--client front face-->
+        <img src="images/leah1.png" alt="Martha">
+        <div class="text-content">
+          <h2>Leah Wetu</h2>
+         <h5>At School</h5>
+         <p>Project: Poster Designs</p>
+         <p>Engagement: Jan 2020 -date</p>
+        </div>
+      </div>
+      <div class="face back"><!--client back face-->
+          <h2>Testimonial</h2>
+          <p>"Working with Wamilimo was a game-changer. Exceptional
+            skills, creative approach, and always met deadlines. 
+            A pleasure to work with  highly recommended! " </p>
+  
+      </div>
+    </div>
+  </div>
+
+  
+<!--client 4-->
+<div class="container">
+    <div class="box">
+      <div class="face front"> <!--client front face-->
+        <img src="images/martha3.jpg" alt="Martha">
+        <div class="text-content">
+          <h2>Martha</h2>
+         <h5>MANAGER : Utali Hotel-MOMBASA</h5>
+         <p>Project: Website Redesign</p>
+         <p>Engagement: Feb 2024-To date</p>
+        </div>
+      </div>
+      <div class="face back"><!--client back face-->
+          <h2>Testimonial</h2>
+          <p>Hillarie is a true asset. Consistently impressed 
+            with the quality of work and attention to detail.
+             Reliable and collaborative, He turned our ideas
+              into reality seamlessly. Highly satisfied client! </p>
+  
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+    
     <!--section 3 WHY ME-->
     <section id="why_me">
         <div style="flex:100%"> <h2>!!WHY MR.WAMILIMO?</h2></div><br>
@@ -258,100 +382,31 @@
                     innovation and excellence.</p>
              </div>
         </details>
+        
     </section>
 
-    <!--section 3 Clients-->
     <section>
-        <div style="flex:100%"> <h2>Here from my Clients</h2></div><br>
-                
-    <figure>
-        <img src="images/leah1.png" class="client-img" ><!--client picture-->
-        
-         <h2>Leah Wetu</h2> <!--client name-->
-        </hr>
-        <h4> AT School </h4>
-        <details>
-            <summary>Testimony</summary>
-            <div class="contents">
-                <p id="testimonial_text">"Working with Wamilimo was a game-changer. Exceptional
-                    skills, creative approach, and always met deadlines. 
-                    A pleasure to work with  highly recommended! " </p>
-            </div>
-        </details>
-       
-                  <p>Project: Poster Designs</p>
-                 <p>Engagement: Jan 2020 -date</p>
-        </figure>
+    <details>
+        <summary>COMMUNICATION </summary>
+           <div class="contents">
+            <p>I Excell in effective communication, ensuring clear and concise infomation exchange. 
+                My Ability to listen actively,articulate ideas, and facilitate open dialogue. 
+                This helps me to understand clients needs, employers expectations and other people in different fields needs </p>
+         </div>
+    </details>
 
-        <!-- client 2-->
-    <figure id="client-box"> 
-        <img src="images/shikanda.jpg" class="client-img" >
-        <h2>George Shikanda</h2>
-    </hr>
-    <h4>CEO : Shejems Youth Enterprise-KAKAMEGA</h4>
-
-            <details>
-                <summary>Testimony</summary>
-                <div class="contents">
-                    <p>"Hillarie is a true asset. Consistently impressed 
-                        with the quality of work and attention to detail.
-                        Reliable and collaborative, He turned my ideas
-                        into reality seamlessly. Highly satisfied client! " </p>
-                </div>
-            </details>
-              <p>Project: Graphic designs</p>
-             <p>Engagement: Jan 2023 -To date</p>
-             </figure>          
-        </section>
-
-<!--client section 2-->
- <section>
- <!-- client 3-->
- <figure> 
-    <img src="images/martha3.jpg" class="client-img" > <br> <br>
-    <h2>Martha</h2>
-</hr>
-<h4 id="client_position">MANAGER : Utali Hotel-MOMBASA</h4>
-
-        <details>
-            <summary>Testimony</summary>
-            <div class="contents">
-                <p id="testimonial_text">Hillarie is a true asset. Consistently impressed 
-                    with the quality of work and attention to detail.
-                     Reliable and collaborative, He turned our ideas
-                      into reality seamlessly. Highly satisfied client! </p>
-            </div>
-        </details>
-          <p>Project: Website Redesign</p>
-         <p>Engagement: Feb 2024-To date</p>
- </figure>
-
-  <!-- client 4-->
-  <figure id="client-box"> 
-    <img src="images/wami2.jpg" class="client-img" >
-    <h2>Hillarie Wamie</h2>
-<h4 id="client_position">INNOVATOR </h4>
-
-        <details>
-            <summary>Testimony</summary>
-            <div class="contents">
-                <p>Creating this personal portfolio was a rewarding challenge that
-                     allowed me to showcase my skills in web development and design.
-                      The project helped me refine my expertise in responsive design, 
-                      user experience, and modern web technologies.Also worked on wamilimo Visual-Nexus
-                      website that proved my ability in we development"</p>
-            </p>
-            </div>
-        </details>
-          <p>Project:Wamilimo portfolio & wamilimo Visual-Nexus </p>
-         <p>Period: Feb-May 2024</p>
- </figure>
-
-        </section>
+    <details>
+        <summary>4. SELF-REGULATED</summary>
+           <div class="contents">
+            <p>Responsibilty remains my strength and am not required to be followed in order to accomplish a Task</p>
+         </div>
+    </details>
+    
+</section>
 
 
         
-<!--PROJECT CONTAINER D-->
+<!--PROJECT section-->
     <section>
         <div style="flex:100%"> <h2>My Projects</h2></div><br>
         <!--coulumn1-->
@@ -380,8 +435,8 @@
             <img src="images/microsoft.jpg" alt="Project 3">
             <div class="info">
                 <h3>Others</h3>
-                <p>WAITING FOR UPCOMING PROJECT...........</p>
-                <a href="#">Coming Soon</a>
+                <p>Coming Soon TO BE UPLOADED </p>
+                <a href="#">WAMILIMO Visual-Nexus ..........</a>
             </div>
         </figure>
     </section>

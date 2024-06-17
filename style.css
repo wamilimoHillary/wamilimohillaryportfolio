@@ -73,9 +73,10 @@ a{
     top: 24%;
     left: 20%;
     text-align: justify;
-    animation: slideInOut 7s ease-in-out infinite;
+    animation: slideInOut 8s ease-in-out infinite;
 }
 
+/*the haeder slidimg in out animation*/
 @keyframes slideInOut {
     0% {
         opacity: 0;
@@ -83,19 +84,20 @@ a{
     }
     10% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translate(0);
     }
     50% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translate(0);
     }
     60% {
         opacity: 0;
-        transform: translateX(100%);
+        transform: translate(0);
     }
+
     100% {
         opacity: 0;
-        transform: translateX(100%);
+        transform: translate(0);
     }
 }
 
@@ -139,7 +141,12 @@ marquee {
 .logo img{
     width:100px;
      height:auto;
-     animation: rotate_client  6s ease-in-out 2s infinite; /*shorthand property*/
+     animation: rotatelogo 6s ease-in-out 2s infinite; /*shorthand property*/
+}
+
+@keyframes rotatelogo{
+  0%{transform: rotateY(0deg);}
+  100%{ transform: rotateY(360deg);}
 }
 
 /*animation for my title name*/
@@ -167,6 +174,58 @@ marquee {
     background-position:1000px 0 ;
 }
    }
+
+
+   
+/* Toggle Switch Styles */
+.switch {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  cursor: pointer;
+  background-color:  rgb(255, 116, 9);
+  border-radius: 34px;
+  height: 100%;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+
+input:checked + .slider {
+  background-color: rgb(61, 3, 3);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+input:checked + .slider i {
+  opacity: 1;
+}
+
 
    #skill_img{
     margin-top: 30px;
@@ -293,43 +352,78 @@ summary::marker{
 }
 */
 
-/*content to be displayed*/
-.contents{
-    font-size:medium;
-    color:rgb(61, 3, 3);
-   padding: 5px; 
-   text-align: justify;
-   border: 1px solid rgb(61, 3, 3); 
-   border-radius: 20px;  
-}
+ /*client section*/ 
+.container {
+    width: 280px;
+    height:460px; 
+    perspective: 1000px;
+    margin:7px; /* Add some space between boxes */
+       padding: 0%;
+       border-radius:0 0 20px 20px;
+  }
+  
+  .box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color:  rgb(61, 3, 3);
+    border-radius:0 0 20px 20px;
+    box-shadow: 1px 2px 2px 3px rgb(255, 116, 9);
+    transform-style: preserve-3d;
+    animation: rotateBox 15s ease-in-out infinite;
 
-/*clients picture*/
-.client-img{
-    height: 150px;
-    width: 150px;
-    float: left;
-    border-radius: 50%;
-    animation: rotate_client  6s ease-in-out 2s infinite; /*shorthand property*/
+  }
+  
+  .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hide backface to avoid flickering */
+   
+    background-color: transparent;
+    color: white;
+    font-size: smaller;
+  
+   
    
   }
 
-  #testimonial_text{
-    color: #fff;
+  /*client image*/
+  .front img {
+    width: 100%;
+    height: 60%; /* Maintain aspect ratio */
+    object-fit: cover;
   }
+  
+  
 
-  /*client-box*/
-  #client-box{
-background-color:#fff;
-box-shadow: 5px 5px  10px 5px  rgb(255, 116, 9)inset;/*box shadow with blur*/
-color:rgb(61, 3, 3);
+  .front .text-content p {
+    font-style: italic;
   }
-
-  /*rotation Client img*/
-@keyframes rotate_client {
-    0%{ transform:rotateY(0deg)}
-    100%{transform:rotateY(360deg);}
+  
+  .back {
+    transform: rotateY(180deg);
+    padding: 15px;;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: large;
+    border-radius:0 0 20px 20px;
+  
+    
   }
-
+  
+  @keyframes rotateBox {
+    0%, 16.67% {
+      
+      transform: rotateY(0deg);
+    }
+    25%, 75% {
+      transform: rotateY(180deg);
+    }
+    83.33%, 100% {
+      transform: rotateY(360deg);
+    }
+  }
 
 
   hr{
@@ -409,3 +503,66 @@ font-size: 40px;
                 padding:  30px ;
                 
                }
+
+
+
+  /* Dark Mode Styles */
+  body.dark-mode main {
+    background-color: rgb(50, 46, 46);
+  }
+  
+  body.dark-mode section {
+    background-color: rgb(23, 23, 23);
+  }
+  
+  body.dark-mode figure {
+    background-color: black;
+    color: #fff;
+  }
+  
+  body.dark-mode details summary {
+    background-color: black;
+  }
+  
+  body.dark-mode .back {
+    background-color: black;
+  }
+  
+  body.dark-mode footer {
+    background-color: black;
+    color: #fff;
+  }
+  
+  /* Optional: Adjust text color if needed */
+  body.dark-mode p,
+  body.dark-mode h3, 
+  body.dark-mode h4,  
+  body.dark-mode h6 {
+    color: #fff;
+  }
+  
+  body.dark-mode .box{
+    background-color: #000;
+  }
+  
+  /*for contacts*/
+  body.dark-mode .contents{
+    color:#fff;
+  }
+  
+  body.dark-mode .contact{
+    background:radial-gradient(circle, rgb(255, 116, 9) 70%, black 10%)
+  }
+  
+  /*summary of content when open*/
+  body.dark-mode details[open] summary{
+    background-color: rgb(255, 116, 9);
+    color:rgb(255, 255, 255);
+  
+  }
+  
+  body.dark-mode #project{
+    border: 0.5px solid rgb(255, 114, 21);
+  }
+  
+  

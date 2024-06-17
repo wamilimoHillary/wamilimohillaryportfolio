@@ -80,15 +80,6 @@
 
 }
  
-#client-box h4,#client_position{
-    font-size:medium ;
-    margin-top: 30%;
-}
-
-.client-img{
-    width: 50%;
-    height: auto;
-}
 
     /*profile-picture and animation*/
     .profile-picture{
@@ -101,6 +92,18 @@
       #animated-text{
             font-size: larger;
     }
+
+     /*client section*/ 
+.container {
+       margin: 20px auto; /* Add some space between boxes */
+       
+  }
+
+    /* Toggle Switch Styles */
+.switch {
+    top: 80px;
+    left: 20px;
+     }
 
 }
       /* small devices (landscape  phones,576 and up to)  */
@@ -156,6 +159,12 @@
                 details{
                     flex-basis: calc(33.33% - 1px);
                 }
+
+                   /* Toggle Switch Styles */
+.switch {
+    top: 80px;
+    left: 20px;
+     }
 
 
      }

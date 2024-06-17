@@ -47,7 +47,25 @@
                 <img src="images/logo.png">
                 <h5 class="cv"><b> ST PAUL'S <br> UNIVERSITY</b></h5>
             </div>
-        </div>     
+        </div>   
+        
+          <!--switch for dark mode-->
+          <div class="switch">
+            <input type="checkbox" id="toggle-dark-mode">
+            <label for="toggle-dark-mode" class="slider">
+        
+            </label>
+        </div>
+        
+
+<!--function to switch btwn light mode and dark-->
+        <script defer>
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+            }
+        
+            document.getElementById('toggle-dark-mode').addEventListener('click', toggleDarkMode);
+        </script>
 
         <!--header title-->
         <div class="header_title">
