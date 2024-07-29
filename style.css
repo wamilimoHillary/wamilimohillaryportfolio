@@ -163,7 +163,7 @@ marquee {
     color: transparent;
     -webkit-text-stroke: 1px rgb(61, 3, 3) ;
     background-image: url(images/hy.jpg);
-    -webkit-background-clip: text;
+    background-clip: text;
     background-position:70% 100%;
     animation: myheading  3s alternate infinite;
   font-weight: bold;
@@ -226,8 +226,20 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-input:checked + .slider i {
-  opacity: 1;
+#moon,#sun{
+  position: absolute;
+    color: #fff;
+    font-size: x-large;
+     }
+
+#sun{
+  left: 33px;
+  top: 5px;
+}
+
+#moon{
+  left: 6px;
+  top: 4px;
 }
 
 
@@ -512,28 +524,30 @@ font-size: 40px;
 
   /* Dark Mode Styles */
   body.dark-mode main {
-    background-color: rgb(50, 46, 46);
+    background-color: #1e1e1e;
   }
   
   body.dark-mode section {
-    background-color: rgb(23, 23, 23);
+    background-color:  #1e1e1e;
   }
   
   body.dark-mode figure {
-    background-color: black;
+    background-color: #2a2929;
     color: #fff;
   }
   
   body.dark-mode details summary {
-    background-color: black;
+    background-color:   #2a2929;
+    box-shadow:1px 1px   rgb(255, 116, 9);
   }
   
   body.dark-mode .back {
-    background-color: black;
+    background-color:   #2a2929;
+    box-shadow:1px 1px   rgb(255, 116, 9);
   }
   
   body.dark-mode footer {
-    background-color: black;
+    background-color: #1e1e1e;
     color: #fff;
   }
   
@@ -546,7 +560,8 @@ font-size: 40px;
   }
   
   body.dark-mode .box{
-    background-color: #000;
+    background-color:  #1e1e1e;
+    box-shadow:1px 1px   rgb(255, 116, 9);
   }
   
   /*for contacts*/
@@ -555,7 +570,7 @@ font-size: 40px;
   }
   
   body.dark-mode .contact{
-    background:radial-gradient(circle, rgb(255, 116, 9) 70%, black 10%)
+    background:radial-gradient(circle, rgb(255, 116, 9) 70%,  #2a2929 10%)
   }
   
   /*summary of content when open*/
